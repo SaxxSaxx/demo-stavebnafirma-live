@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stavby Kováč | Profesionálne stavebné práce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; }
+    </style>
+</head>
+<body class="bg-stone-100 text-stone-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="building-2" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-bold text-stone-900 tracking-tight">STAVBY KOVÁČ</span>
+                        <span class="block text-xs text-amber-600 font-medium -mt-1">s.r.o.</span>
+                    </div>
+                </div>
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#sluzby" class="text-stone-600 hover:text-amber-600 font-medium transition">Služby</a>
+                    <a href="#realizacie" class="text-stone-600 hover:text-amber-600 font-medium transition">Realizácie</a>
+                    <a href="#referencie" class="text-stone-600 hover:text-amber-600 font-medium transition">Referencie</a>
+                    <a href="#o-nas" class="text-stone-600 hover:text-amber-600 font-medium transition">O nás</a>
+                    <a href="#kontakt" class="text-stone-600 hover:text-amber-600 font-medium transition">Kontakt</a>
+                </div>
+                <a href="#dopyt" class="bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-700 transition flex items-center gap-2">
+                    <i data-lucide="file-text" class="w-5 h-5"></i>
+                    Nezáväzný dopyt
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-stone-900 overflow-hidden pt-20">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&h=900&fit=crop" alt="Stavba" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 bg-gradient-to-r from-stone-900 via-stone-900/80 to-transparent"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 bg-amber-600/20 text-amber-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <i data-lucide="award" class="w-4 h-4"></i>
+                    25 rokov skúseností
+                </div>
+                <h1 class="text-6xl lg:text-7xl font-bold text-white mb-6 leading-none">
+                    STAVIAME VAŠE <span class="text-amber-500">SNY</span>
+                </h1>
+                <p class="text-xl text-stone-300 mb-8 leading-relaxed">
+                    Kompletné stavebné práce od základov po strechu. Rodinné domy, prístavby, 
+                    rekonštrukcie a komerčné objekty. Kvalita, na ktorú sa môžete spoľahnúť.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#dopyt" class="bg-amber-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-amber-700 transition flex items-center gap-2">
+                        <i data-lucide="file-text" class="w-5 h-5"></i>
+                        Zaslať dopyt
+                    </a>
+                    <a href="#realizacie" class="bg-white/10 text-white border border-white/30 px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition">
+                        Pozrieť realizácie
+                    </a>
+                </div>
+                <div class="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-white/20">
+                    <div>
+                        <div class="text-4xl font-bold text-white">500+</div>
+                        <div class="text-stone-400">dokončených projektov</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-white">25</div>
+                        <div class="text-stone-400">rokov na trhu</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-white">50+</div>
+                        <div class="text-stone-400">zamestnancov</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="sluzby" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-amber-600 font-semibold tracking-wider uppercase text-sm">Naše služby</span>
+                <h2 class="text-5xl font-bold text-stone-900 mt-3">Komplexné stavebné riešenia</h2>
+                <p class="text-stone-600 mt-4 max-w-2xl mx-auto">Poskytujeme kompletný servis v oblasti pozemného staviteľstva pre súkromných aj firemných klientov.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Rodinný dom" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="home" class="w-7 h-7 text-amber-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-900 mb-3">Rodinné domy na kľúč</h3>
+                        <p class="text-stone-600 mb-4">Výstavba rodinných domov od projektu po kolaudáciu. Moderné technológie a kvalitné materiály.</p>
+                        <ul class="text-sm text-stone-500 space-y-1">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Montované domy</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Murované domy</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Drevodomy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Rekonštrukcia" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="hammer" class="w-7 h-7 text-amber-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-900 mb-3">Rekonštrukcie</h3>
+                        <p class="text-stone-600 mb-4">Kompletné aj čiastočné rekonštrukcie bytov, domov a komerčných priestorov.</p>
+                        <ul class="text-sm text-stone-500 space-y-1">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Bytové jadrá</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Kúpeľne</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Fasády</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Prístavby" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="plus-square" class="w-7 h-7 text-amber-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-900 mb-3">Prístavby a nadstavby</h3>
+                        <p class="text-stone-600 mb-4">Rozšírenie obytnej plochy vašej nehnuteľnosti. Nadstavby, prístavby, zimné záhrady.</p>
+                        <ul class="text-sm text-stone-500 space-y-1">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Povolenia a projekty</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Statické posúdenie</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Realizácia</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&h=400&fit=crop" alt="Strechy" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="triangle" class="w-7 h-7 text-amber-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-900 mb-3">Strechy a krytiny</h3>
+                        <p class="text-stone-600 mb-4">Výstavba nových striech, rekonštrukcie, výmena krytiny, klampiarske práce.</p>
+                        <ul class="text-sm text-stone-500 space-y-1">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Ploché strechy</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Šikmé strechy</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Klampiarske prvky</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&h=400&fit=crop" alt="Zateplenie" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="thermometer" class="w-7 h-7 text-amber-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-900 mb-3">Zateplenie a fasády</h3>
+                        <p class="text-stone-600 mb-4">Zateplenie objektov, kontaktné zatepľovacie systémy, zateplenie strechy a pivníc.</p>
+                        <ul class="text-sm text-stone-500 space-y-1">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Polystyrén</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Minerálna vlna</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Omietky</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&h=400&fit=crop" alt="Inžinierske siete" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="pipette" class="w-7 h-7 text-amber-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-900 mb-3">Inžinierske siete</h3>
+                        <p class="text-stone-600 mb-4">Vodoinštalácie, kanalizácie, plynoinštalácie, elektroinštalácie, kúrenie.</p>
+                        <ul class="text-sm text-stone-500 space-y-1">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Voda a kanalizácia</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Kúrenie</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Elektroinštalácie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="realizacie" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-amber-600 font-semibold tracking-wider uppercase text-sm">Realizácie</span>
+                <h2 class="text-5xl font-bold text-stone-900 mt-3">Naše dokončené projekty</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop" alt="Projekt 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-amber-600 text-sm font-semibold">Rodinný dom</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-1">Moderná vila v Bernolákove</h3>
+                        <p class="text-stone-600 text-sm mt-2">Výstavba rodinného domu na kľúč, 180 m², dokončené 2023</p>
+                        <div class="flex items-center gap-4 mt-4 text-sm text-stone-500">
+                            <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i> 8 mesiacov</span>
+                            <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-4 h-4"></i> 180 m²</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&h=400&fit=crop" alt="Projekt 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-amber-600 text-sm font-semibold">Rekonštrukcia</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-1">Rekonštrukcia bytu Bratislava</h3>
+                        <p class="text-stone-600 text-sm mt-2">Kompletná rekonštrukcia 3-izbového bytu, 85 m², dokončené 2023</p>
+                        <div class="flex items-center gap-4 mt-4 text-sm text-stone-500">
+                            <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i> 3 mesiace</span>
+                            <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-4 h-4"></i> 85 m²</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?w=600&h=400&fit=crop" alt="Projekt 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-amber-600 text-sm font-semibold">Prístavba</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-1">Zimná záhrada Pezinok</h3>
+                        <p class="text-stone-600 text-sm mt-2">Prístavba zimnej záhrady k rodinnému domu, 45 m², dokončené 2022</p>
+                        <div class="flex items-center gap-4 mt-4 text-sm text-stone-500">
+                            <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i> 2 mesiace</span>
+                            <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-4 h-4"></i> 45 m²</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop" alt="Projekt 4" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-amber-600 text-sm font-semibold">Komerčný objekt</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-1">Obchodné centrum Trnava</h3>
+                        <p class="text-stone-600 text-sm mt-2">Rekonštrukcia priestorov pre retail, 320 m², dokončené 2022</p>
+                        <div class="flex items-center gap-4 mt-4 text-sm text-stone-500">
+                            <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i> 4 mesiace</span>
+                            <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-4 h-4"></i> 320 m²</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600573472591-ee6c563aaec9?w=600&h=400&fit=crop" alt="Projekt 5" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-amber-600 text-sm font-semibold">Zateplenie</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-1">Zateplenie bytovky Senec</h3>
+                        <p class="text-stone-600 text-sm mt-2">Kompletné zateplenie bytového domu, 1200 m² fasády, dokončené 2023</p>
+                        <div class="flex items-center gap-4 mt-4 text-sm text-stone-500">
+                            <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i> 5 mesiacov</span>
+                            <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-4 h-4"></i> 1200 m²</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752229-250ed79470f8?w=600&h=400&fit=crop" alt="Projekt 6" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-amber-600 text-sm font-semibold">Rodinný dom</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-1">Drevodom Malacky</h3>
+                        <p class="text-stone-600 text-sm mt-2">Výstavba nízkoenergetického drevodomu, 145 m², dokončené 2023</p>
+                        <div class="flex items-center gap-4 mt-4 text-sm text-stone-500">
+                            <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i> 6 mesiacov</span>
+                            <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-4 h-4"></i> 145 m²</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="o-nas" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-amber-600 font-semibold tracking-wider uppercase text-sm">Prečo my</span>
+                    <h2 class="text-5xl font-bold text-stone-900 mt-3 mb-6">Prečo si vybrať práve nás?</h2>
+                    <p class="text-stone-600 text-lg mb-8">
+                        Sme rodinná firma s dlhoročnou tradíciou. Našou prioritou je kvalita, 
+                        dodržanie termínov a spokojnosť každého klienta.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="badge-check" class="w-6 h-6 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-lg">Záruka kvality</h4>
+                                <p class="text-stone-600">Na všetky práce poskytujeme záruku 5 rokov. Používame len certifikované materiály.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-lg">Dodržanie termínov</h4>
+                                <p class="text-stone-600">Vieme, aké dôležité je mať svoj domov včas. Termíny dodržujeme na 98%.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="calculator" class="w-6 h-6 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-lg">Férové ceny</h4>
+                                <p class="text-stone-600">Transparentné cenové ponuky bez skrytých poplatkov. Platíte len to, čo bolo dohodnuté.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="users" class="w-6 h-6 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-lg">Profesionálny tím</h4>
+                                <p class="text-stone-600">Náš tím tvoria skúsení odborníci s dlhoročnou praxou v stavebníctve.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-amber-600 rounded-3xl transform -rotate-3"></div>
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop" alt="Stavba" class="relative rounded-3xl shadow-2xl w-full object-cover h-[600px]">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-amber-600">25+</div>
+                            <div class="text-stone-600">rokov skúseností</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="referencie" class="py-20 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-amber-500 font-semibold tracking-wider uppercase text-sm">Referencie</span>
+                <h2 class="text-5xl font-bold mt-3">Čo hovoria naši klienti</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-stone-800 rounded-2xl p-8">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                    </div>
+                    <p class="text-stone-300 mb-6">"Stavali nám dom na kľúč. Všetko prebehlo podľa plánu, dokonca aj termín dodržali. Kvalita práce je výborná, odporúčam!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-stone-700 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="w-6 h-6 text-stone-400"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Milan a Jana K.</div>
+                            <div class="text-sm text-stone-500">Bernolákovo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-stone-800 rounded-2xl p-8">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                    </div>
+                    <p class="text-stone-300 mb-6">"Rekonštruovali nám celý byt vrátane bytového jadra. Profesionálny prístup, čistota na pracovisku, férová cena."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-stone-700 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="w-6 h-6 text-stone-400"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Petra S.</div>
+                            <div class="text-sm text-stone-500">Bratislava</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-stone-800 rounded-2xl p-8">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                    </div>
+                    <p class="text-stone-300 mb-6">"Zatepľovali náš bytový dom. Práca prebehla rýchlo, bez problémov. Teraz máme výrazne nižšie náklady na kúrenie."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-stone-700 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="w-6 h-6 text-stone-400"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Ing. Peter M.</div>
+                            <div class="text-sm text-stone-500">Predseda SVB, Senec</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section id="dopyt" class="py-20 bg-amber-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-amber-100 font-semibold tracking-wider uppercase text-sm">Nezáväzný dopyt</span>
+                <h2 class="text-5xl font-bold text-white mt-3">Získajte cenovú ponuku</h2>
+                <p class="text-amber-100 mt-4 text-lg">Vyplňte formulár a my vás budeme kontaktovať s nezáväznou cenovou ponukou.</p>
+            </div>
+            <form class="bg-white rounded-2xl p-8 md:p-12 shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-stone-700 font-medium mb-2">Meno a priezvisko *</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition" placeholder="Zadajte vaše meno">
+                    </div>
+                    <div>
+                        <label class="block text-stone-700 font-medium mb-2">Telefón *</label>
+                        <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition" placeholder="+421 XXX XXX XXX">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-stone-700 font-medium mb-2">Email *</label>
+                    <input type="email" required class="w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition" placeholder="vas@email.sk">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-stone-700 font-medium mb-2">Adresa stavby / lokality</label>
+                    <input type="text" class="w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition" placeholder="Ulica, mesto">
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-stone-700 font-medium mb-2">Typ služby *</label>
+                        <select required class="w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+                            <option value="">Vyberte typ služby</option>
+                            <option>Výstavba rodinného domu</option>
+                            <option>Rekonštrukcia bytu/domu</option>
+                            <option>Prístavba / nadstavba</option>
+                            <option>Zateplenie fasády</option>
+                            <option>Strecha / krytina</option>
+                            <option>Inžinierske siete</option>
+                            <option>Iné - uvediem v popise</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-stone-700 font-medium mb-2">Orientačný rozpočet</label>
+                        <select class="w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+                            <option value="">Vyberte rozpočet</option>
+                            <option>do 10 000 €</option>
+                            <option>10 000 - 30 000 €</option>
+                            <option>30 000 - 60 000 €</option>
+                            <option>60 000 - 100 000 €</option>
+                            <option>nad 100 000 €</option>
+                            <option>Nezáväzná cenová ponuka</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-stone-700 font-medium mb-2">Popis projektu / požiadaviek</label>
+                    <textarea rows="5" class="w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition" placeholder="Stručne popíšte, čo potrebujete - rozsah prác, špeciálne požiadavky, termín realizácie..."></textarea>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-stone-700 font-medium mb-2">Prílohy (projekt, fotografie)</label>
+                    <div class="border-2 border-dashed border-stone-300 rounded-lg p-8 text-center hover:border-amber-500 transition cursor-pointer">
+                        <i data-lucide="upload-cloud" class="w-10 h-10 text-stone-400 mx-auto mb-3"></i>
+                        <p class="text-stone-600">Kliknite pre nahratie súborov alebo ich presuňte sem</p>
+                        <p class="text-stone-400 text-sm mt-1">PDF, JPG, PNG (max. 10 MB)</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 mb-8">
+                    <input type="checkbox" id="suhlas-stavby" required class="mt-1 w-5 h-5 text-amber-600 rounded border-stone-300 focus:ring-amber-500">
+                    <label for="suhlas-stavby" class="text-sm text-stone-600">
+                        Súhlasím so spracovaním osobných údajov v súlade s GDPR. Oboznámil(a) som sa s 
+                        <a href="#" class="text-amber-600 hover:underline">podmienkami ochrany osobných údajov</a>.
+                    </label>
+                </div>
+                <button type="submit" class="w-full bg-amber-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-amber-700 transition flex items-center justify-center gap-2">
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                    Odoslať dopyt
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <span class="text-amber-600 font-semibold tracking-wider uppercase text-sm">Kontakt</span>
+                    <h2 class="text-5xl font-bold text-stone-900 mt-3 mb-6">Kontaktujte nás</h2>
+                    <p class="text-stone-600 mb-8">
+                        Máte otázky alebo chcete začať spoluprácu? Neváhajte nás kontaktovať. 
+                        Radi vám pomôžeme s vaším projektom.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-7 h-7 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-stone-900 text-lg">Sídlo firmy</div>
+                                <div class="text-stone-600">Stavebná ulica 789<br>900 01 Modra</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone" class="w-7 h-7 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-stone-900 text-lg">Telefón</div>
+                                <div class="text-stone-600">+421 918 765 432<br>+421 33 123 4567</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="mail" class="w-7 h-7 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-stone-900 text-lg">Email</div>
+                                <div class="text-stone-600">info@stavbykovac.sk<br>dopyty@stavbykovac.sk</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="clock" class="w-7 h-7 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-stone-900 text-lg">Kancelária</div>
+                                <div class="text-stone-600">
+                                    Pondelok - Piatok: 8:00 - 17:00<br>
+                                    Sobota: 9:00 - 12:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-8">
+                        <a href="#" class="w-12 h-12 bg-stone-100 rounded-xl flex items-center justify-center hover:bg-amber-600 hover:text-white transition">
+                            <i data-lucide="facebook" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-stone-100 rounded-xl flex items-center justify-center hover:bg-amber-600 hover:text-white transition">
+                            <i data-lucide="instagram" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-stone-100 rounded-xl flex items-center justify-center hover:bg-amber-600 hover:text-white transition">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-stone-100 rounded-2xl overflow-hidden h-[600px]">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.0!2d17.3075!3d48.3339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDIwJzAyLjAiTiAxN8KwMTgnMjcuMCJF!5e0!3m2!1ssk!2ssk!4v1609459200000!5m2!1ssk!2ssk" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-amber-600 rounded-lg flex items-center justify-center">
+                            <i data-lucide="building-2" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <span class="text-xl font-bold tracking-tight">STAVBY KOVÁČ</span>
+                            <span class="block text-xs text-amber-500 -mt-1">s.r.o.</span>
+                        </div>
+                    </div>
+                    <p class="text-stone-400 text-sm">Profesionálne stavebné práce s 25-ročnou tradíciou. Stavíame vaše sny od základov po strechu.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Služby</h4>
+                    <ul class="space-y-2 text-stone-400 text-sm">
+                        <li><a href="#" class="hover:text-amber-500 transition">Rodinné domy</a></li>
+                        <li><a href="#" class="hover:text-amber-500 transition">Rekonštrukcie</a></li>
+                        <li><a href="#" class="hover:text-amber-500 transition">Zateplenie</a></li>
+                        <li><a href="#" class="hover:text-amber-500 transition">Strechy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Rýchle odkazy</h4>
+                    <ul class="space-y-2 text-stone-400 text-sm">
+                        <li><a href="#realizacie" class="hover:text-amber-500 transition">Realizácie</a></li>
+                        <li><a href="#referencie" class="hover:text-amber-500 transition">Referencie</a></li>
+                        <li><a href="#dopyt" class="hover:text-amber-500 transition">Nezáväzný dopyt</a></li>
+                        <li><a href="#" class="hover:text-amber-500 transition">Kariéra</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontakt</h4>
+                    <ul class="space-y-2 text-stone-400 text-sm">
+                        <li>Stavebná 789, Modra</li>
+                        <li>+421 918 765 432</li>
+                        <li>info@stavbykovac.sk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-stone-500 text-sm">&copy; 2024 Stavby Kováč s.r.o. Všetky práva vyhradené.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-stone-400 hover:text-amber-500 transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                    <a href="#" class="text-stone-400 hover:text-amber-500 transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
